@@ -12,7 +12,7 @@ function getUsersFromDatabase(array) {
   // array.name = name.toUppercase();
   return Array.from(array, (key) => ({
     id: key.id,
-    firstName: key.name,
+    firstName: key.name.toUpperCase(),
     years: key.age,
   }));
   // Повертаємо масив користувачів
